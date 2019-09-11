@@ -40,3 +40,8 @@ Please be careful about the path, if you wish to create another folder (other th
 npm run packgr
 ```
 Once the task is complete the `custom-components` (one level above the MainApp) gets populated by the build package. Which can then be installed as a dependency by other Angular applications.
+
+## Components Configuration
+- All the basic properties (for configuration purpose) of the components reside inside `config.ts` file.
+
+When the application is executed (**ng-serve**) then all the configuration provided in `config.ts` is consumed by the respective components inside the shared-components folder and the components are rendered based on the properties defined within the `config.ts` file.
